@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: blue;
+    height: 740px;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
+    color: white;
+}
+
+.nav{
+    display: inline-block;
+}
+
+.nav a{
+    color: white;
+    margin-left: 2cm;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact{
+    display: inline-block;
+    color: white;
+    right: 1cm;
+    margin-right: 1cm;
+}
+
+.contact span{
+    color: black;
+}
