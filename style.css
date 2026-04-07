@@ -111,10 +111,11 @@ body{
 
 .hero .image img {
     width: 100%;
-    max-width: 680px;
+    max-width: 600px;
     height: 500px;
     border-radius: 24px;
     display: block;
+    object-fit: cover;
 }
 
 .icons{
@@ -521,7 +522,6 @@ body{
     margin: 0 10px 50px;
     display: inline-block;
     color: #2a6df4;
-    margin-left: -100px;
 }
 
 .upper{
@@ -532,7 +532,7 @@ body{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .upper-content{
@@ -544,6 +544,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* padding-left: -100px; */
 }
 
 .upper-content h1{
@@ -551,16 +552,67 @@ body{
     font-size: 45px;
     font-weight: 700;
     line-height: 1.1;
+    padding-left: 100px;
 }
 
 .upper-content .btn-last{
     background: #facc15;
     color: #1e2937;
-    font-weight: 700;
+    font-weight: 540;
     font-size: 1.1rem;
     padding: 16px 32px;
     cursor: pointer;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
     border-radius:8px ;
+    margin-right: 100px;
 }
+
+.main-content{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 90px;
+    padding: 60px 5%;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.left-section .logo img{
+    display: flex;
+    align-items: center; 
+    height: 25px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #090909;
+    transition: color 0.3s;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+
